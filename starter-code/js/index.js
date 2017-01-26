@@ -4,11 +4,12 @@ var board = new Board();
 $('#start').on('click', function(){
   board.start();
   activatePaddle2();
-  var game = setInterval(updateState, intervalTime);
+  var game = setInterval(updateState, 3000);
   renderGame();
 });
 
 function updateState(){
+  ball.move();
 }
 
 $(document).on('keydown', function(e){
@@ -24,6 +25,7 @@ function renderScore(){
 }
 
 function renderBall(){
+
 }
 
 function renderPaddle(){

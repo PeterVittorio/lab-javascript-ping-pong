@@ -2,21 +2,61 @@ body {
 }
 
 #board {
+  position: relative;
+  left: 100px;
+  top: 50px;
+  margin-left: 40px;
+  width: 1000px;
+  height: 500px;
+  background-color: green;
+  z-index: 0;
+}
+
+#grass {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  z-index: 0;
 }
 
 .paddle {
 }
 
 #paddle1 {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  width: 20px;
+  background: black;
+  left: 1px;
+
 }
 
 #paddle2 {
+  position: absolute;
+  height: 100px;
+  width: 20px;
+  background: black;
+  right: 1px;
 }
 
 #net {
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  background: white;
+  margin-left: 49%;
+
 }
 
 #ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: yellow;
+  border: 1px solid black;
+  z-index: 999;
+  position: absolute;
 }
 
 .score span {
@@ -29,6 +69,16 @@ body {
 }
 
 button {
+  position: relative;
+  font-size: 24px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5%;
+  background-color: grey;
+  color: white;
+  left: 45%;
+  margin-top: 60px;
+
 }
 
 #winner {
